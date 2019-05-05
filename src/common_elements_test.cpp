@@ -25,6 +25,7 @@ namespace common_elements_test {
     std::vector<int> b = {5, 4, 3, 2, 1};
 
     test::assert_equal(5, common_elements(a, b));
+    test::assert_equal(5, common_elements(b, a));
   }
 
   void test_simple_ordered() {
@@ -32,6 +33,7 @@ namespace common_elements_test {
     std::vector<int> b = {1, 3, 5, 11, 15, 42};
 
     test::assert_equal(3, common_elements(a, b));
+    test::assert_equal(3, common_elements(b, a));
   }
 
   void test_simple_unordered() {
@@ -39,6 +41,7 @@ namespace common_elements_test {
     std::vector<int> b = {15, 3, 1, 42, 11, 5};
 
     test::assert_equal(3, common_elements(a, b));
+    test::assert_equal(3, common_elements(b, a));
   }
 
   void run_tests() {
