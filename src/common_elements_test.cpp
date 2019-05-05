@@ -41,13 +41,6 @@ namespace common_elements_test {
     test::assert_equal(3, common_elements(a, b));
   }
 
-  void test_duplicates() {
-    std::vector<int> a = {42, 1, 42, 2};
-    std::vector<int> b = {3, 42, 4, 42, 5};
-
-    test::assert_equal(1, common_elements(a, b));
-  }
-
   void run_tests() {
     test_both_empty();
     test_one_empty();
