@@ -15,8 +15,7 @@
  *
  * For better performance a.size() should be <= b.size() (less hash table queries).
  */
-size_t common_elements_implementation(std::vector<int> const &a,
-                                      std::vector<int> const &b) {
+size_t common_elements_implementation(std::vector<int> const &a, std::vector<int> const &b) {
   auto a_set = std::unordered_set<int>(a.begin(), a.end());
 
   size_t common_elements = 0;
